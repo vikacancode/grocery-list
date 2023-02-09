@@ -25,7 +25,7 @@ this.setState ({groceryList:listArray, userInput:''})
 deleteItem(){
     let listArray = this.state.groseryList;
     listArray=[];
-    this.setState ({groseryList:listArray})
+    this.setState ({groceryList:listArray})
 }
 
 crossedWord(event){
@@ -59,7 +59,7 @@ value={this.state.userInput}/>
     ))}
 </ul> 
 <div className="container">
-<button onClick ={()=> this.deleteItem()} className="delete">DELETE</button>
+<button onClick ={()=> this.deleteItem()} className="btn delete">DELETE</button>
 </div>
 </form>
 </div>
